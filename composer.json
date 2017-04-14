@@ -4,7 +4,7 @@
     "description": "Locked core dependencies",
     "license": "GPL-2.0+",
     "require": {
-        "drupal/core": "8.2.0-beta3",
+        "drupal/core": "8.2.0-rc1",
         "asm89/stack-cors": "1.0.0",
         "composer/installers": "v1.0.21",
         "composer/semver": "1.0.0",
