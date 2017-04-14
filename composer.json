@@ -4,7 +4,7 @@
     "description": "Locked core dependencies",
     "license": "GPL-2.0+",
     "require": {
-        "drupal/core": "8.1.7",
+        "drupal/core": "8.1.8",
         "composer/installers": "v1.0.21",
         "composer/semver": "1.0.0",
         "doctrine/annotations": "v1.2.7",
