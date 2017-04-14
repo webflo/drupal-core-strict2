@@ -1,5 +1,5 @@
 {
-    "name": "webflo/drupal-core-strict",
+    "name": "webflo/drupal-core-strict2",
     "description": "Locked Drupal core dependencies",
     "license": "GPL-2.0+",
     "require": {

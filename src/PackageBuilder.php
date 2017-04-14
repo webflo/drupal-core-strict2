@@ -12,17 +12,20 @@ class PackageBuilder {
     return new static(json_decode(file_get_contents($path), TRUE));
   }
 
-  protected function defaultMetadata() {
+  protected function defaultMetadata($version) {
     return [
-      'name' => 'webflo/drupal-core-strict',
+      'name' => 'webflo/drupal-core-strict2',
       'type' => 'metapackage',
       'description' => 'Locked core dependencies',
       'license' => 'GPL-2.0+',
+      'require' => [
+        'drupal/core' => $version,
+      ]
     ];
   }
 
-  public function buildPackage() {
-    $composer = $this->defaultMetadata();
+  public function buildPackage($version) {
+    $composer = $this->defaultMetadata($version);
 
     foreach ($this->lock['packages'] as $package) {
       $composer['require'][$package['name']] = $this->packageToVersion($package);
